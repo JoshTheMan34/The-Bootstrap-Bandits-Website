@@ -1,0 +1,20 @@
+#background1 {
+    width: 1500px;
+    filter: blur(3px);
+}
+.txtover {
+    position: relative;
+}
+.txtover figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.6);
+}
