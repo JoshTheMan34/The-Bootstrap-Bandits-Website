@@ -1,10 +1,19 @@
+body {
+    font-family: 'Taviraj', serif;
+}
+.body_index {
+    background-color: black;
+}
+
 #background1 {
     width: 1500px;
     filter: blur(3px);
 }
 .txtover {
     position: relative;
+    margin: 0;
 }
+
 .txtover figcaption {
     position: absolute;
     top: 50%;
@@ -12,9 +21,30 @@
     transform: translate(-50%, -50%);
     width: 40%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0;
     color: white;
     text-align: center;
     font-size: 50px;
     background: rgba(0, 0, 0, 0.6);
+    border-style: solid;
 }
+
+.landing {
+    background-color: black;
+}
+
+.carousel_slides {
+    background-color: black;
+}
+
+#background_carousel {
+    filter: blur(3px);
+    width: 350px;
+    height: 450px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
