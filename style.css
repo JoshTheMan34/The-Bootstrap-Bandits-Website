@@ -48,3 +48,41 @@ a {
     text-decoration: none;
 }
 
+.gradient {
+    background: rgb(124,132,148);
+    background: linear-gradient(180deg, #000000 29.69%, #2C2727 69.79%, #584F4F 100%, #584F4F 100%);
+}
+
+
+.reviews {
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+
+.times {
+    color: white;
+    padding-top: 2rem;
+}
+
+hr {
+    background-color: white;
+}
+
+.timesh6 {
+    line-height: 175%;
+}
+
+
+.BeforeScroll {
+    width: 18rem;
+    height: auto;
+
+    display: none;
+}
+
+.AfterScroll {
+    height: auto;
+    width: 18rem;
+
+    display: block;
+}
