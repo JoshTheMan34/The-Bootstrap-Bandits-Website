@@ -72,17 +72,3 @@ hr {
     line-height: 175%;
 }
 
-
-.BeforeScroll {
-    width: 18rem;
-    height: auto;
-
-    display: none;
-}
-
-.AfterScroll {
-    height: auto;
-    width: 18rem;
-
-    display: block;
-}
