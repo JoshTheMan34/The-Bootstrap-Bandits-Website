@@ -1,13 +1,19 @@
 body {
     font-family: 'Taviraj', serif;
 }
+
+.bodyblack {
+    color: white;
+    background-color: black;
+}
+
 .body_index {
     background-color: black;
     color: white;
 }
 
 #background1 {
-    width: 1500px;
+    width: 2000px;
     filter: blur(3px);
 }
 .txtover {
@@ -56,13 +62,14 @@ a {
 
 
 .reviews {
-    padding-top: 15rem;
-    padding-bottom: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
 }
 
 .times {
+    padding-top: 5rem;
+    background-color:#584F4F;
     color: white;
-    padding-top: 2rem;
 }
 
 hr {
@@ -71,6 +78,10 @@ hr {
 
 .timesh6 {
     line-height: 175%;
+}
+
+.reviewstitle {
+    padding-bottom: 10rem;
 }
 
 
@@ -159,3 +170,219 @@ top: 243px;
 .card {
     color: black;
 }
+
+
+@media (max-width:575px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    .day h5 {
+        background-color: #f8f9fa;
+        padding: 3px 5px 5px;
+        margin: -8px -8px 8px -8px;
+    }
+    .date {
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 576px) {
+    .day {
+        height: 14.2857vw;
+    }
+}
+
+.calendarsection {
+    padding-top: 75px;
+}
+
+.jumbotron {
+    color: black;
+    background-color: white;
+}
+
+
+
+div.stars {
+    padding-top: 5rem;
+    width: 270px;
+    display: inline-block;
+    user-select: none;
+}
+
+.mt-200 {
+    margin-top: 100px
+}
+
+input.star {
+    display: none
+}
+
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #4A148C;
+    transition: all .2s
+}
+
+input.star:checked~label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s
+}
+
+input.star-5:checked~label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952
+}
+
+input.star-1:checked~label.star:before {
+    color: #F62
+}
+
+label.star:hover {
+    transform: rotate(-15deg) scale(1.3)
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+
+
+
+
+
+.progress-wrap {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset  0 0 0 2px rgba(255,255,255,0.2);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .progress-wrap::after {
+    position: absolute;
+    content: '↑';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    color: #ecedf3;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap:hover::after {
+    opacity: 0;
+  }
+  
+  .progress-wrap::before {
+    position: absolute;
+    content: '↑';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    opacity: 0;
+    background-image: linear-gradient(298deg, #da2c4d, #f8ab37);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .progress-wrap svg path { 
+    fill: none; 
+  }
+  
+  .progress-wrap svg.progress-circle path {
+    stroke: #ecedf3;
+    stroke-width: 4;
+    box-sizing:border-box;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+
+
+
+  .parallax {
+    background-image: url(img/ParkstoneBar.jpg);
+    min-height: 570px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+  .parallaxmenutext {
+    margin-top: 15rem;
+    margin-bottom: -3rem;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-style: solid;
+    font-size: 50px;
+
+  }
+
+  .food {
+      padding-top: 4rem;
+      line-height: 250%;
+  }
+
+  .gradient2 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 23%, rgba(255,255,255,1) 65%);
+  }
+
+
+
+
+
+
+
+
+
+
+

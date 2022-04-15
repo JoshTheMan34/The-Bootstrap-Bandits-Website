@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="sr" lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,22 +8,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&family=Nanum+Myeongjo&family=Taviraj:wght@300&display=swap" rel="stylesheet">
-    <title>Hello, world!</title>
+    <title>The Parkstone Grille</title>
+    <link rel="shortcut icon" href="img/Parkstone.jpg">
 
     <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body class="body_index">
+
+    <div class="progress-wrap ">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgba(0, 0, 0, 0);">
         <a class="navbar-brand" href="#"><img src="img/Parkstone.jpg" style="height: 40px; width: 40px ;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -57,7 +67,7 @@
                   <div>
                       <figure class="txtover">
                           <img src="img/Background 1.jpg" class="img-fluid" id="background1">
-                          <figcaption class="py-4">
+                          <figcaption class="py-4 headline">
                             The Parkstone Grille
                             <br>
                             <h6>Open: Monday-Thursday 11 AM to 10 PM</h6>
@@ -77,7 +87,7 @@
                   <div class="carousel-item active">
                     <figure class="txtover">
                       <img class="d-block w-100" src="img/348s.jpg" alt="First slide" id="background_carousel">
-                      <figcaption class="py-4">
+                      <figcaption class="py-4 carouselsreveal">
                         Menu 1
                       </figcaption>
                     </figure>
@@ -115,7 +125,7 @@
                   <div class="carousel-item active">
                     <figure class="txtover">
                       <img class="d-block w-100" src="img/2c66820b5e8f1dc3e622964256c29157348294f34f33765be5ebcdc41d7b22be-rimg-w522-h296-gmir.jpg" alt="First slide" id="background_carousel">
-                      <figcaption class="py-4">
+                      <figcaption class="py-4 carouselsreveal">
                         Events
                       </figcaption>
                     </figure>                
@@ -150,85 +160,130 @@
           </div>
         </div>
       </section>
-      
-
       <section class="times">
         <div class="container">
-          <div class="text-center">
-            <h2>Times</h2>
-          </div>
-          <div class="row text-center">
-            <div class="col-md-4">
-              <h6 class="timesh6">
-              Monday - Thursday
-              <br>
-              11 AM - 10 PM
-              </h6>
-          </div>
-            <div class="col-md-4">
-              <h6 class="timesh6">
-                Friday - Saturday
-                <br>
-                11 AM - 1 AM
-              </h6>
+          <hr style="margin:0;">
+          <div class="timesreveal">
+            <div class="text-center" style="padding-top: 3rem;">
+              <h2>Times</h2>
             </div>
-            <div class="col-md-4">
-              <h6 class="timesh6">
-                Sunday
+            <div class="row text-center">
+              <div class="col-md-4">
+                <h6 class="timesh6">
+                Monday - Thursday
                 <br>
-                11 AM - 9 PM
-              </h6>
+                11 AM - 10 PM
+                </h6>
+            </div>
+              <div class="col-md-4">
+                <h6 class="timesh6">
+                  Friday - Saturday
+                  <br>
+                  11 AM - 1 AM
+                </h6>
+              </div>
+              <div class="col-md-4">
+                <h6 class="timesh6">
+                  Sunday
+                  <br>
+                  11 AM - 9 PM
+                </h6>
+              </div>
             </div>
           </div>
         </div>
-        <hr>
-      </section>
-
-
+      </section>   
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#584F4F" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,224C384,224,480,160,576,133.3C672,107,768,117,864,149.3C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       <section class="reviews gradient">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center g-5">
-            
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="img/unsplashXoByiBymX20285-kata.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">10/10</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="img/unsplashjpkfc5dDI284-lbuq.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">5/5 <br> <img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"></h5>
-                  <p class="card-text">
-                    Bro....  this is the new hot spot in Jackson. Real talk. Don't just believe me. Go see for yourself.
-                    <br>
-                    -Daniel
-                </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="img/unsplash1Rm9GLHV0UA283-q4w.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">4/5 <br> <img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star.svg" alt="ReviewStar"></h5>
-                  <p class="card-text">
-                    The best fried okra I have ever had. Crispy with a special seasoning that gave it just a touch of spice. You will get messy trying to eat the burgers but it is worth it. And good beer selection too!
-                    <br>
-                    -Eric Smith
-                  </p>
-                </div>
-              </div>
+      <div class="container py-4">
+          <div class="row reviewstitle headline load-hidden">
+            <div class="col-md-12 text-center">
+              <h1 class="display-4">Reviews</h1>
+              <hr>
+              <p class="lead">A sample of reviews from Google Reviews</p>
             </div>
           </div>
+          <article class="postcard dark blue reviewreveal">
+            <a class="postcard__img_link" href="#">
+              <img class="postcard__img" src="img/unsplashXoByiBymX20285-kata.png" alt="Image Title" />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+              </div>
+            </div>
+          </article>
+          <article class="postcard dark green reviewreveal">
+            <a class="postcard__img_link" href="#">
+              <img class="postcard__img" src="img/unsplashjpkfc5dDI284-lbuq.png" alt="Image Title" />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title green"><a href="#">5/5 <br> <img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"></a></h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                <p>
+                  Bro....  this is the new hot spot in Jackson. Real talk. Don't just believe me. Go see for yourself.
+                  <br>
+                  -Daniel
+              </p>              
+            </div>
+            </div>
+          </article>
+          <article class="postcard dark yellow reviewreveal">
+            <a class="postcard__img_link" href="#">
+              <img class="postcard__img" src="img/unsplash1Rm9GLHV0UA283-q4w.png" alt="Image Title" />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title yellow"><a href="#">4/5 <br> <img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star.svg" alt="ReviewStar"></a></h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                <p>
+                  The best fried okra I have ever had. Crispy with a special seasoning that gave it just a touch of spice. You will get messy trying to eat the burgers but it is worth it. And good beer selection too!
+                  <br>
+                  -Eric Smith
+              </p>
+              </div>
+            </div>
+          </article>
+
+
+          <div class="container d-flex justify-content-center mt-200 widget">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="stars">
+                        <form action=""> <input class="star star-5" id="star-5" type="radio" name="star" /> <label class="star star-5" for="star-5"></label> <input class="star star-4" id="star-4" type="radio" name="star" /> <label class="star star-4" for="star-4"></label> <input class="star star-3" id="star-3" type="radio" name="star" /> <label class="star star-3" for="star-3"></label> <input class="star star-2" id="star-2" type="radio" name="star" /> <label class="star star-2" for="star-2"></label> <input class="star star-1" id="star-1" type="radio" name="star" /> <label class="star star-1" for="star-1"></label> </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+
         </div>
       </section>
-
       
+
+      <script>
+        ScrollReveal().reveal('.carouselsreveal', {duration: 2000});
+        ScrollReveal().reveal('.timesreveal' , {duration: 3000 , interval: 500});
+        ScrollReveal().reveal('.headline', { duration: 2000 , interval: 750 });
+        ScrollReveal().reveal('.reviewreveal', { interval: 1000 , duration:1500 });
+      </script>
+
       <section class="footer">
         <footer id="footer" class="footer-1">
           <div class="main-footer widgets-dark typo-light">
@@ -264,7 +319,10 @@
                 
                 <div class="col-xs-12 col-sm-6 col-md-3">
                   <div class="widget no-box">
-                    <h5 class="widget-title">Where To Find Us<span></span></h5>
+                    <h5 class="widget-title">Our Location<span></span></h5>
+                    <p>
+                      224 Parkstone Pl, Jackson, TN 38305
+                    </p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1362.736161578755!2d-88.77960910753242!3d35.67328182275481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887c1db0c9feff45%3A0x5a6ca7f3d7f70440!2sThe%20Parkstone%20Grille!5e0!3m2!1sen!2sus!4v1649954426356!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  </div>
                 </div>
                 
@@ -277,19 +335,19 @@
                       <li class=""><a href="https://www.facebook.com/TheParkstoneGrille" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhMWE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5pDoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAX1JREFUeNrs1jFrFFEQB/DfeWpCMFVMkaQIsRG1SWORb6DGKkUgpE6qJNiIH0YQFAtFUFKnEC1iY6XBq64SixCwkEvIEXNjM8ISBPe8W6/IDQzLezM7/7fzZv6ztYgwCLlgQDIw4Is9vDuJe5jHKDoI7GC7KuAxbOAu2gl6iimMVAU8htcJ9AANtHCCLdyvKtWbWRt3CnvXcAu3y9ZNt8B1LOFhYe8R1rGXWXhVKlJEdKNzEbEbERO5vh4RzYi42WWcrttpFMc4LKS4gS9VtNMyFvPuZhK8nbYjLOB5rtt4ivd/C1orQZk7WbEv8qANfEjblTzUePqs4WNWe89fHHiHZ3+wtfCysJ7PAuwLZX7L/vycupusBTfwqWBbwdd+3fEmJtL3Et7gKg4wm/e8mr4n2O8XcCv1t/zI9Euq/I5m1dPpMmr9mHDnbx4PgctK58zzvwDXC+xUL8tUvc7jn6mPs3+nyzJVr8AdPElO7iSdvv0X4Nrwh34IXJX8GgCPbKxZUJtpYgAAAABJRU5ErkJggg=="></a></li>
                     </ul>
                   </div>
-                </div>
-                
+                </div>                
               </div>
             </div>
           </div>
           </footer>
       </section>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
+
   </body>
 </html>
