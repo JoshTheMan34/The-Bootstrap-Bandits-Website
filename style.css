@@ -162,8 +162,15 @@ transition: all 250ms ease-in-out 0s;
 
 .entpic {
 
-position: absolute;
+
 width: 694px;
+height: 670px;
+left: 613px;
+top: 243px;
+}
+.powerhour {
+
+width: 640px;
 height: 670px;
 left: 613px;
 top: 243px;
