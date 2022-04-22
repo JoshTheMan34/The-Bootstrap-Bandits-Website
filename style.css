@@ -163,8 +163,8 @@ transition: all 250ms ease-in-out 0s;
 .entpic {
 
 
-width: 694px;
-height: 670px;
+width: 350px;
+height: 400px;
 left: 613px;
 top: 243px;
 }
@@ -384,6 +384,7 @@ html.sr .load-hidden {
     background: -webkit-linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     background: linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#121212",GradientType=1);
+    font-size:20px;
   }
 
   .gradient2 {
@@ -395,7 +396,7 @@ html.sr .load-hidden {
 
 
   .food-title {
-      padding-top: 5rem;
+      padding-top: 0rem;
       padding-bottom: 10rem;
     }
 
