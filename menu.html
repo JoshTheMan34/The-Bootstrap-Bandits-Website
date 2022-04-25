@@ -30,7 +30,7 @@
 
       .carousel-caption {
         position:absolute;
-        top: 44%;
+        top: 35%;
       }
 
       .carousel-caption h1 {
@@ -123,48 +123,25 @@
 
 
     <section>
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
         <div class="carousel-inner" role="listbox">
           <!-- Slide 1-->
           <div class="carousel-item active" style="background-image: url(img/ParkstoneBar.jpg);">
             <div class="carousel-caption text-center headline">
               <h1>Parkstone Menu</h1>
               <hr>
-              <h3>We offer a diverse menu for all!</h3>
+              <div class="row">
+                <div class="col-md-6 pt-3">
+                  <a class="btn btn-outline-light btn-lg button-2" href="foodmenu.html">Food Menu</a>
+                </div>
+                <div class="col-md-6 pt-3">
+                  <a class="btn btn-outline-light btn-lg button-2" href="drinksmenu.html">Drinks Menu</a>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Slide 2-->
-          <div class="carousel-item" style="background-image: url(img/ParkstoneBar.jpg);">
-            <div class="carousel-caption text-center">
-              <button type="button" class="invisiblebutton">
-                <a href="foodmenu.html">
-                  <h1>Food Menu</h1>
-                </a>
-              </button> 
-            </div>
-          </div>
-          <!-- Slide 3-->
-          <div class="carousel-item" style="background-image: url(img/ParkstoneBar.jpg);">
-            <div class="carousel-caption text-center">
-              <button type="button" class="invisiblebutton">
-                <a href="drinksmenu.html">
-                  <h1>Drinks Menu</h1>
-                </a>
-              </button>               
-            </div>
-          </div>
+
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
       </div>
     </section>
 
@@ -231,7 +208,7 @@
 
 
       <script>
-        ScrollReveal().reveal('.headline', { duration: 2000 });
+        ScrollReveal().reveal('.headline', { duration: 2500 });
       </script>
 
 

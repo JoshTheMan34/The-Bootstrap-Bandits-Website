@@ -78,3 +78,54 @@
 
   background: rgba(0, 0, 0, 0.6);
   border-style: solid;
+
+
+
+
+
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+
+
+            <!-- Slide 2-->
+            <div class="carousel-item" style="background-image: url(img/ParkstoneBar.jpg);">
+              <div class="carousel-caption text-center">
+                <button type="button" class="invisiblebutton">
+                  <a href="foodmenu.html">
+                    <h1>Food Menu</h1>
+                  </a>
+                </button> 
+              </div>
+            </div>
+            <!-- Slide 3-->
+            <div class="carousel-item" style="background-image: url(img/ParkstoneBar.jpg);">
+              <div class="carousel-caption text-center">
+                <button type="button" class="invisiblebutton">
+                  <a href="drinksmenu.html">
+                    <h1>Drinks Menu</h1>
+                  </a>
+                </button>               
+              </div>
+            </div>
+
+
+
+
+            .button-2 {
+              color: black;
+              border: 3px solid #fff;
+              background-image: -webkit-linear-gradient(30deg, transparent 50%, white 50%);
+              background-image: linear-gradient(30deg, transparent 50%, white 50%);
+              background-size: 500px;
+              background-repeat: no-repeat;
+              background-position: 0%;
+              -webkit-transition: background 300ms ease-in-out;
+              transition: background 300ms ease-in-out;
+            }
+            .button-2:hover {
+              background-position: 100%;
+              color: white;
+            }

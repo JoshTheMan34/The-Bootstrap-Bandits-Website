@@ -156,24 +156,15 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 .typo-light span,
 .typo-light small{  color: #fff;}
 
-ul.social-footer2 { margin: 0;padding: 0; width: auto;}
-ul.social-footer2 li {display: inline-block;padding: 0;}
-ul.social-footer2 li a:hover {background-color:#ff8d1e;}
-ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center;}
-.btn{background-color: #ff8d1e; color:#fff;}
-.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
--webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--webkit-transition: all 250ms ease-in-out 0s;
--moz-transition: all 250ms ease-in-out 0s;
--ms-transition: all 250ms ease-in-out 0s;
--o-transition: all 250ms ease-in-out 0s;
-transition: all 250ms ease-in-out 0s;
-
+    ul.social-footer2 { margin: 0;padding: 0; width: auto;
 }
+    ul.social-footer2 li {display: inline-block;padding: 0;
+}
+    ul.social-footer2 li a:hover {background-color:#ff8d1e;
+}
+    ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center;
+}
+
 
 
 
@@ -542,4 +533,74 @@ html.sr .load-hidden {
           transform: rotate(180deg);
           transition: 0.5s;
       }
+
+      .gallerybackground {
+          background-color:#1d1d1d;
+          color: white;
+      }
+
+      .galleryimage {
+          width: 250px;
+          height: 300px;
+          border-style: solid;
+          border-width: 2px;
+      }
+
+      .gallerytitle {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          letter-spacing: 7px;
+      }
+
+      @media screen and (max-width: 767px) {
+          .imagepadding {
+            padding-left: 5rem;
+            padding-right: 5rem;
+          }
+      }
+
+      .galleryimagewide {
+          width: 500px;
+          height: 240px;
+          border-style: solid;
+      }
+
+      .zoom {
+          transition: transform .2s;
+      }
+
+      .zoom:hover {
+        transform: scale(1.1);
+      }
+
+      .imagepadding {
+        padding-bottom: 2rem;
+      }
+
+
+      .btn-lg {
+          border-style: solid;
+          border-width: medium;
+          border-radius: 0;
+          font-size: 2.0rem;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+      }
+
+
+      .button-2 {
+        background-image: -webkit-linear-gradient(30deg, transparent 50%, white 50%);
+        background-image: linear-gradient(30deg, transparent 50%, white 50%);
+        background-size: 659px;
+        background-repeat: no-repeat;
+        background-position: 0%;
+        -webkit-transition: background 350ms ease-in-out;
+        transition: background 350ms ease-in-out;
+      }
+      .button-2:hover {
+        background-position: 100%;
+      }
+    
 
