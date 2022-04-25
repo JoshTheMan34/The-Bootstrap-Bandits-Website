@@ -15,6 +15,11 @@
     <title>The Parkstone Grille</title>
     <link rel="shortcut icon" href="img/Parkstone.png">
 
+    <script type="text/javascript" src="javascript1.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
   </head>
   <body class="drinksmenu">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgba(0, 0, 0, 0);">
@@ -70,7 +75,7 @@
       <seciton>
         <div class="container">
           <div class="accordion" id="accordionExample">
-            <div class="item">
+            <div class="item menusreveal">
                <div class="item-header" id="headingOne">
                   <h2 class="mb-0">
                      <button class="btn btn-link" type="button" data-toggle="collapse"
@@ -87,7 +92,7 @@
                   </div>
                </div>
             </div>
-            <div class="item">
+            <div class="item menusreveal">
                <div class="item-header" id="headingTwo">
                   <h2 class="mb-0">
                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
@@ -104,7 +109,7 @@
                   </div>
                </div>
             </div>
-            <div class="item">
+            <div class="item menusreveal">
                <div class="item-header" id="headingThree">
                   <h2 class="mb-0">
                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
@@ -122,7 +127,7 @@
                   </div>
                </div>
             </div>
-            <div class="item">
+            <div class="item menusreveal">
                <div class="item-header" id="headingFour">
                   <h2 class="mb-0">
                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
@@ -206,6 +211,10 @@
 
 
 
+      <script>
+        ScrollReveal().reveal('.headline', { duration: 2000 });
+        ScrollReveal().reveal('.menusreveal', { interval: 500 , duration:1500 });
+      </script>
 
       <section class="returntotop">
         <div class="progress-wrap ">
