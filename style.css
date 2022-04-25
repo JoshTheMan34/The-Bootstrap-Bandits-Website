@@ -26,7 +26,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 50%;
     box-sizing: border-box;
     padding: 0;
     color: white;
@@ -34,6 +34,24 @@ body {
     font-size: 50px;
     background: rgba(0, 0, 0, 0.6);
     border-style: solid;
+}
+
+@media screen and (max-width: 768px) {
+    .txtover .captiontitle {
+        width: 90%;
+    }
+
+    .txtover .captioncalendar {
+        width: 70%;
+    }
+
+    #background1 {
+        height: 300px;
+    }
+
+    .hidden-wave {
+        display: none;
+    }
 }
 
 .landing {
@@ -66,7 +84,7 @@ a {
 
 .reviews {
     padding-top: 7rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0rem;
 }
 
 .times {
@@ -214,8 +232,9 @@ top: 243px;
 
 
 div.stars {
-    padding-top: 5rem;
+    padding-top: 8rem;
     width: 270px;
+    height: 120px;
     display: inline-block;
     user-select: none;
 }
@@ -354,6 +373,27 @@ html.sr .load-hidden {
   }
 
 
+  .parallaxmenutext {
+    margin-top: 15rem;
+    margin-bottom: -3rem;
+    font-size: 50px;
+  }
+
+  .parallaxmenutext h1 {
+      font-size: 4.5rem;
+      text-shadow: .1rem .1rem .8rem black;
+      font-weight: 600;
+  }
+
+  .parallaxmenutext h5 {
+      font-size: 1.7rem;
+      text-shadow: .1rem .1rem .5rem black;
+  }
+
+  .parallaxmenutext hr {
+    text-shadow: .1rem .1rem .8rem black;
+  }
+
 
   .parallax {
     background-image: url(img/ParkstoneBar.jpg);
@@ -364,27 +404,25 @@ html.sr .load-hidden {
     background-size: cover;
   }
 
-
-
-  .parallaxmenutext {
-    margin-top: 15rem;
-    margin-bottom: -3rem;
-    font-size: 50px;
-    background: rgba(0, 0, 0, 0.6);
-    border-style: solid;
-    font-size: 50px;
-
-  }
-
   .food {
     padding-top: 4rem;
-    line-height: 250%;
+    line-height: 180%;
     background: rgb(64,64,64);
     background: -moz-linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     background: linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#121212",GradientType=1);
     font-size:20px;
+  }
+
+  .drinksmenu {
+    background: rgb(24,24,24);
+    color: white;
+  }
+
+  .foodmenu {
+    background: rgb(24,24,24);
+    color: white;
   }
 
   .gradient2 {
@@ -404,6 +442,104 @@ html.sr .load-hidden {
         font-size: 55px;
     }
 
+    .invisiblebutton {
+        background: transparent;
+        border: none !important;
+        color: white;
+    }
+
+    .star-div {
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+    }
+
+    #reviews-container {
+        padding-bottom: 0px!important;
+    }
+
+    .middle-review {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .blue {
+        margin-bottom: 0px!important;
+    }
+
+    .green {
+        margin-bottom: 0px!important;
+    }
 
 
+    .calendar-footer-wave {
+        background-color: #f8f9fa;
+    }
+
+
+
+
+
+
+    .accordion{
+        margin: 40px 0;
+      }
+      .accordion .item {
+          border: none;
+          margin-bottom: 50px;
+          background: none;
+      }
+      .t-p{
+        color: rgb(193 206 216);
+        padding: 40px 30px 0px 30px;
+      }
+      .accordion .item .item-header h2 button.btn.btn-link {
+          background: #333435;
+          color: white;
+          border-radius: 0px;
+          font-family: 'Poppins';
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 2.5;
+          text-decoration: none;
+      }
+      .accordion .item .item-header {
+          border-bottom: none;
+          background: transparent;
+          padding: 0px;
+          margin: 2px;
+      }
+      
+      .accordion .item .item-header h2 button {
+          color: white;
+          font-size: 20px;
+          padding: 15px;
+          display: block;
+          width: 100%;
+          text-align: left;
+      }
+      
+      .accordion .item .item-header h2 i {
+          float: right;
+          font-size: 30px;
+          color: #eca300;
+          width: 50px;
+          height: 45px;
+          background-color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+      }
+      
+      .accordion .item .item-header h2 i img {
+          width: 20px;
+      }
+      button.btn.btn-link.collapsed i {
+          transform: rotate(0deg);
+      }
+      
+      button.btn.btn-link i {
+          transform: rotate(180deg);
+          transition: 0.5s;
+      }
 
