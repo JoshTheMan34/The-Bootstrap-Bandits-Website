@@ -11,12 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&family=Nanum+Myeongjo&family=Taviraj:wght@300&display=swap" rel="stylesheet">
-    
-    <title>The Parkstone Grille</title>
+    <title>The Parkstone Grille/Food-Menu</title>
     <link rel="shortcut icon" href="img/Parkstone.png">
 
+    <script type="text/javascript" src="javascript1.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
   </head>
-  <body class="bodyblack">
+  <body class="foodmenu">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgba(0, 0, 0, 0);">
         <a class="navbar-brand" href="#"><img src="img/Parkstone.png" style="height: 40px; width: 40px ;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,48 +48,615 @@
               <a class="nav-link" href="entertainment.html">Entertianment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="calender.html">Calender</a>
+              <a class="nav-link" href="calendar.html">Calendar</a>
             </li>
           </ul>
         </div>
       </nav>
 
+    <section class="parallax">
+      <div class="container-fluid">
+        <div class="row reviewstitle headline load-hidden py-4">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center py-4 parallaxmenutext">
+            <h1 class="display-4">Food</h1>
+            <hr>
+            <h5>The Parkstone Food Menu</h5>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="hidden-wave"><path fill="#181818" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,261.3C274.3,245,343,203,411,202.7C480,203,549,245,617,256C685.7,267,754,245,823,224C891.4,203,960,181,1029,186.7C1097.1,192,1166,224,1234,218.7C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </section>
 
-      <section class="parallax">
-        <div class="container-fluid">
-          <div class="row reviewstitle headline load-hidden py-4">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center py-4 parallaxmenutext">
-              <h1 class="display-4">Food</h1>
-              <h6>Welcome!</h6>
+
+    <seciton class="food" id="foodlink">
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="item menusreveal">
+                <div class="item-header" id="headingOne">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Appetizers
+                      <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-md-7">
+                        <p class="text-left">
+                          <hr>
+                          <ul>
+                            <li class="pt-3"
+                              >WINGS (6)$12.00 OR (12) $19.00
+                            </li>
+                              <ul>
+                                <li>
+                                  Crispy and fried to pefection
+                                </li>
+                              </ul>
+                                <li class="pt-3">
+                                  SAUSAGE AND CHEESE PLATTER $13.00
+                                </li> 
+                              <ul>
+                                <li>
+                                  Grilled kielbasa peppers and a mixture of cheese cubes.
+                                </li>
+                              </ul>
+                              <li class="pt-3">
+                                CHEESE STICKS
+                                $10.00 
+                              </li>
+                              <ul>
+                                <li>
+                                  House made battered mozzarella cheese with homemade
+                                marinara sauce
+                              </li>
+                              </ul>
+                            
+                            
+                              <li class="pt-3">
+                                BARBEQUE RANCH FRIES
+                                $9.00 
+                              </li>
+                            <ul>
+                              <li>
+                                Loaded with pulled pork,cheddar cheese,BBQ sauce and ranch
+                              </li>
+                            </ul>
+                              <li class="pt-3">
+                                SWEET THAI CHILI SHRIMP LETTUCE WRAP $15.00
+                              </li>
+                              <li class="pt-3">
+                                SPINACH DIP
+                              </li>
+                            <ul>
+                              <li>
+                                Spinach artichokes blend of cheese $11.00
+                              </li>
+                            </ul>
+                              <li class="pt-3">
+                                FRIED PICKLES $11.00
+                              </li>
+                              <ul>
+                                <li>  
+                                  Sliced dill pickels battered and fried to perfection
+                                </li>
+                              </ul>
+                            <li class="pt-3">
+                              CATFISH BITES $9.00
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                      <div class="col-sm-5">
+                        <img src="img/photojetdryrupcajunwingsmozzarellasticks.png" height="550px" width="450px" class="menuimage">
+                      </div>
+                    </div>                
+                  </div>
+                </div>
             </div>
-            <div class="col-md-4"></div>
+            <div class="item menusreveal">
+                <div class="item-header" id="headingTwo">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Pasta
+                      <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-md-7">
+                        <p class="text-left">
+                          <hr>
+                          <ul>
+                            <li>
+                              CHICKEN BROCCOLI PASTA $17.00
+                              </li>
+                              <ul>
+                              <li>
+                                Penne pasta tossed in our creamy alfredo sauce topped with
+                                grilled chicken, broccoli,and parmesan cheese.
+                                
+                              </li>
+                              </ul>
+                            <li class="pt-3">
+                              MEAT SAUCE PENNE PASTA $14.00
+                            </li> 
+                              <ul>
+                              <li>
+                                Penne pasta tossed in our delicious meat sauce tossed with
+                                parmesan cheese.
+                
+                              </li>
+                              </ul>
+                            
+                              <li class="pt-3">
+                                BOSS BRISKET MAC'N'CHEESE $18.00
+                
+                              </li>
+                              <ul><li>
+                                Cavatappi noodles tossed in our creamy cheese sauce topped
+                                with the famous "BOSS ROSS" brisket and drizzled in homemade
+                
+                              </li></ul>
+                            
+                
+                        </p>
+                      </div>
+                      <div class="col-sm-5">
+                        <img src="img/pasta.jpg"  alt="" height="400" width="350" class="menuimage">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="item menusreveal">
+                <div class="item-header" id="headingThree">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Burgers and Wraps
+                        <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-sm-7">
+                    <p class="text-left">
+                      <hr>
+                      <ul>
+                        <li class="pt-3">
+                          CHICKEN BACON WRAP $15.00
+                          </li>
+                          <ul>
+                          <li>
+                            Juicy chicken bites with hickory smoked bacon and our house made
+                            ranch dressing added with lettuce tomatoes,and purple onions.
+                            
+                          </li>
+                          </ul>
+                        <li class="pt-3">
+                          BOURBON GLAZE STEAK WRAP $16.00
+            
+                        </li> 
+                          <ul>
+                          <li>
+                            Mouthwatering juicy steak tips tossed in our sweet bourbon glaze
+                            paired with lettuce,heirloom tomatoes and provolone cheese.
+            
+                            </li>
+                          </ul>
+                        
+                          <li class="pt-3">
+                            BACON CHEDDAR BARBEQUE BURGER $16.00
+            
+                            
+                          </li>
+                          <ul><li> 
+                            Your classic bacon BBQ sauce and cheddar chesse trio on a juicy patty
+                            cooked to your preferences on a toasted bun lettuce, tomato, and onions.
+                            
+                          </li></ul>
+                        
+                        
+                          <li class="pt-3">
+                            HAWAIIAN CHICKEN SANDWICH $15.00
+            
+                          </li>
+                            <ul>
+                        <li>
+                          Tender chicken breast smothered in teriyaki glazed topped with a
+                          grilled pineapple finished with onions lettuce and tomato
+                        </li>
+                        </ul>
+                          <li class="pt-3">
+                            FRENCH DIP SANDWICH $13.99
+            
+            
+            
+            
+            
+                          </li>
+                        
+                          <li class="pt-3">
+                            PARKSTONE BURGER $16.06
+                            </li>
+                            <ul>
+                          <li>
+                            indulge in our namesake burger,It is topped with grilled jalapeno, a fried
+                            egg,pepper jack cheese and a toasted bun
+                          </li>
+                        </ul>
+                  
+                          <li class="pt-3">  
+                            EXIT 85 A1 BURGER $16.00
+                          </li>
+                          <ul>
+                            <li>
+                              Topped with swiss cheese, a fried onion ring dripping with Al SAUCE
+                            </li>
+                          </ul>
+                      
+                          <li class="pt-3">  
+                            PLAIN JAIN BURGER $14.00
+            
+                          </li>
+                        <ul>
+                            <li>
+                              Sometimes less is more! 1/2 id patty with cheese and add the topping
+                              of your choice
+                            
+                            </li>
+                          </ul>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                      <img src="img/photojetsandwichhawaiianburger.png" alt="" height="550px" width="450px" class="menuimage">
+                    </div>
+                  </div>             
+                </div>
+                </div>
+            </div>
+            <div class="item menusreveal">
+                <div class="item-header" id="headingFour">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                        Salads
+                        <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-sm-7">
+                    <p class="text-left">
+                      <hr>
+                      <ul>
+                        <li class="pt-3">
+                          GRILLED CHICKEN CLUB SALAD $16.00
+              
+                          </li>
+                          <ul>
+                          <li>
+                            Sliced grilled chicken, bacon, turkey, ham on top of a fresh mixed green
+                            salad with tomatoes, onions cucumber cheddar cheese advacado with
+                            boiled eggs on the side
+                          </li>
+                          </ul>
+                        <li class="pt-3">
+                        
+                          STRAWBERRY FIELDS SALAD $14.00
+              
+              
+                        </li> 
+                          <ul>
+                          <li>
+                            A refreshing mixed green salad topped with fresh strawberries walnuts
+                            blue cheese crumbles, topped with a champagne balsamic vinaigrette
+                            </li>
+                          </ul>
+                        
+                          <li class="pt-3">
+                            TENNESSEE CHICKEN SALAD $16.00
+              
+              
+                            
+                          </li>
+                          <ul><li> 
+                            Chicken salad top of a bed of lettuce with sunflower seeds, grapes
+                            strawberries and raspberries drizzled in our raspberries vinaigrette
+                            dressing.
+              
+                          </li></ul>
+                        
+                        
+                          <li class="pt-3">
+                            STEAK OR CHICKEN CAESAR (chicken $14.00) (Steak $17.00)
+              
+              
+                          </li>
+                            <ul>
+                        <li>
+                          Fresh Romaine lettuce tossed In out caesar dressing with mozzarella
+                          cheese crutons,and sprinkled with parmesan
+              
+                        </li>
+                        </ul>
+                          
+                      </p>
+                  </div>
+                    <div class="col-sm-5">
+                      <img src="img/salad4.png" alt="" height="450px" width="400px" class="menuimage">
+                    </div>
+                  </div>               
+                </div>
+                </div>
+            </div>
+            <div class="item menusreveal">
+              <div class="item-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">
+                      Steaks And Specialties
+                      <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-7 ">
+                    <p class="text-left">
+                      <h3>
+                        Meats are served with salad and a side dish
+                      </h3>
+                      <hr>
+                      <ul>
+                        <li class="pt-3">
+                          80Z FILET
+                          $39.00
+                          
+                          </li>
+                          <ul>
+                          <li>
+                            Handout 8 oz fillet grilled to perfection
+                          </li>
+                          </ul>
+                        <li class="pt-3">
+                      
+                          12OZ RIBEYE $32.00
+                        </li> 
+                          <ul>
+                          <li>
+                            Handout 12 oz Ribeye grilled to your liking
+              
+                            </li>
+                          </ul>
+                        
+                          <li class="pt-3">
+                            SALMON WITH CREAM SAUCE $24.00
+              
+                            
+                          </li>
+                          <ul><li> 
+                            Grilled Atlantic salmon topped with our signature cream sauce served
+                            with grilled asparagus
+                            
+                            
+                          </li></ul>
+                        
+                        
+                          <li class="pt-3">
+                            GRILLED PORK CHOPS 1 for $12.99 OR 2 for $15.99
+              
+                          </li>
+                          
+                          <li class="pt-3">
+                          
+                            BARBEQUE CHICKEN BREAST $14.99
+              
+              
+              
+              
+                          </li>
+                        
+                          <li class="pt-3">
+                            CATFISH FILET PLATE 2pc for $13.99 OR 3pc. for $15.99
+              
+                            </li>
+                            <ul>
+                          <li>
+                            Grilled or Fried
+              
+                          </li>
+                        </ul>
+                  
+                          <li class="pt-3">  
+                            FRIED SHRIMP PLATE $16.99
+              
+                          </li>
+                          
+                      
+                          <li class="pt-3">  
+                            SMOTHERED HAMBURGER STEAK $13.99
+              
+                      
+                          </li>
+                        <ul>
+                      </p>
+                    </div>
+                    <div class="col-sm-5">
+                      <img src="img/smotheredhamburgersteak1.png" alt="" height="400px" width="350px" class="menuimage">
+                    </div>
+                  </div>                 
+                </div>
+              </div>
+            </div>
+            <div class="item menusreveal">
+            <div class="item-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseSix" aria-expanded="false"
+                      aria-controls="collapseSix">
+                    Sides
+                    <i><img src="img/angle-down-solid.svg"></i>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                data-parent="#accordionExample">
+                <div class="t-p">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-sm-7 ">
+                  <p class="text-left">
+                    <hr>
+                    <ul>
+                      <li class="pt-3">
+                        MASHED POTATOES
+                        $3.50
+                        </li>
+                      
+                      <li class="pt-3">
+                        FRIED OKRA
+                        $3.50
+                      </li> 
+                        
+                      <li class="pt-3">
+                        BAKED APPLES
+                        $3.50
+                      </li>
+
+                      <li class="pt-3">
+                        SEASONED FRIES
+                        $3.50
+                      </li>
+                      
+                      <li class="pt-3">
+                        SWEET POTATO FRIES
+                        $3.50
+                      </li>
+                    
+                      <li class="pt-3">
+                        SALAD (HOUSE/CAESAR)
+                        $5.50
+                      </li>
+
+                      <li class="pt-3">  
+                        
+                        BROCCOLI/ASPARAGUS
+                        $4.00
+                        
+                      </li>
+                      
+                  
+                      <li class="pt-3">  
+                        FRUIT CUP
+                        $3.00
+                      </li>
+
+                      <li class="pt-3">  
+                        POTATO SOUP / GUMBO Cup $5.50 / bowl $7.50
+                      </li>
+
+                      <li class="pt-3">
+                        SAUTÉED MUSHROOMS
+                        $3.00
+                      </li>
+                      <ul>
+                    </p>
+                  </div>
+                  <div class="col-sm-5">
+                  
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <div class="item menusreveal">
+          <div class="item-header" id="headingSeven">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseSeven" aria-expanded="false"
+                    aria-controls="collapseSeven">
+                  Kids Menu
+                  <i><img src="img/angle-down-solid.svg"></i>
+                </button>
+              </h2>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+              data-parent="#accordionExample">
+              <div class="t-p">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-sm-7 ">
+                  <p class="text-left">
+                    <h3>All kids items are served with a fruitcup</h3>
+                    <hr>
+                    <ul>
+
+                      <li class="pt-3">
+                        MAC 'N' CHEESE
+                        $8.00
+                        </li>
+
+                        <li class="pt-3">
+                          CHICKEN TENDERS
+                          $9.00
+                        </li>
+                      
+                        <li class="pt-3">
+                          BURGERS
+                          $8.00
+                        </li>
+                        
+                        <li class="pt-3">
+                          SPAGHETTI
+                          $8.00
+                        </li>
+                  </p>
+                </div>
+                <div class="col-sm-5">
+               
+                </div>
+                </div>             
+              </div>
+            </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#404040" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,261.3C274.3,245,343,203,411,202.7C480,203,549,245,617,256C685.7,267,754,245,823,224C891.4,203,960,181,1029,186.7C1097.1,192,1166,224,1234,218.7C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-      </section>
-
-
-      <seciton>
-        <div class="container">
-            
-        </div>
+      </div>
     </seciton>
-
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="footer-wave"><path fill="#252525" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" id="footer-wave-path"></path></svg>
 
       <section class="footer">
         <footer id="footer" class="footer-1">
           <div class="main-footer widgets-dark typo-light">
             <div class="container">
               <div class="row">
-                  
                 <div class="col-xs-12 col-sm-6 col-md-3">
                   <div class="widget subscribe no-box">
                     <h5 class="widget-title">The Parkstone Grille<span></span></h5>
                     <p>The Parkstone Grille is a casual dining restraurant with a good variety in food, a full bar, and live music with a good and laid back atmosphere.</p>
                   </div>
                 </div>
-                
                 <div class="col-xs-12 col-sm-6 col-md-3">
                   <div class="widget no-box">
                     <h5 class="widget-title">Quick Links<span></span></h5>
@@ -100,7 +671,7 @@
                         <div class="thumb-content"><a href="entertainment.html">Entertainment</a></div> 
                       </li>
                       <li>
-                        <div class="thumb-content"><a href="calender.html">Calender</a></div> 
+                        <div class="thumb-content"><a href="calendar.html">Calendar</a></div> 
                       </li>
                     </ul>
                   </div>
@@ -132,19 +703,21 @@
       </section>
 
 
+      <script>
+        ScrollReveal().reveal('.headline', { duration: 2000 });
+        ScrollReveal().reveal('.menusreveal', { interval: 500 , duration:1500 });
+      </script>
 
 
 
+    <section class="returntotop">
+      <div class="progress-wrap ">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg>
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+      <script src="js/index.js"></script>
+    </section>
 
-      <section class="returntotop">
-        <div class="progress-wrap ">
-          <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg>
-        </div>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-        <script src="js/index.js"></script>
-      </section>
-
-      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

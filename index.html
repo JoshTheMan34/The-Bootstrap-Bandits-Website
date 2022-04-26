@@ -18,6 +18,32 @@
     <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <style>
+      a:link {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:active {
+        text-decoration: none;
+        color: white;
+      }
+      
+    </style>
+
+
   </head>
   <body class="body_index">
 
@@ -49,7 +75,7 @@
               <a class="nav-link" href="entertainment.html">Entertainment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="calender.html">Calender</a>
+              <a class="nav-link" href="calendar.html">Calendar</a>
             </li>
           </ul>
         </div>
@@ -62,7 +88,7 @@
                   <div>
                       <figure class="txtover">
                           <img src="img/Background 1.jpg" class="img-fluid" id="background1">
-                          <figcaption class="py-4 headline">
+                          <figcaption class="py-4 headline captiontitle">
                             The Parkstone Grille
                             <br>
                             <h6>Open: Monday-Thursday 11 AM to 10 PM</h6>
@@ -83,15 +109,23 @@
                     <figure class="txtover">
                       <img class="d-block w-100" src="img/parkstonegrillebackdrop4.jpg" alt="First slide" id="background_carousel">
                       <figcaption class="py-4 carouselsreveal">
-                          Menu
+                          <button type="button" class="invisiblebutton">
+                            <a href="menu.html">
+                              Menu
+                            </a>
+                          </button> 
                       </figcaption>
                     </figure>
                   </div>
                   <div class="carousel-item">
                     <figure class="txtover">
-                      <img class="d-block w-100" src="img/348s.jpg" alt="First slide" id="background_carousel">
+                      <img class="d-block w-100" src="img/foodbackground2.jpg" alt="First slide" id="background_carousel">
                       <figcaption class="py-4">
-                        Food
+                        <button type="button" class="invisiblebutton">
+                          <a href="foodmenu.html">
+                            Food
+                          </a>
+                        </button> 
                       </figcaption>
                     </figure>
                   </div>
@@ -99,7 +133,11 @@
                     <figure class="txtover">
                       <img class="d-block w-100" src="img/thebarcloseup.jpg" alt="First slide" id="background_carousel">
                       <figcaption class="py-4">
-                        Drinks
+                        <button type="button" class="invisiblebutton">
+                          <a href="drinksmenu.html">
+                            Drinks
+                          </a>
+                        </button> 
                       </figcaption>
                     </figure>
                   </div>
@@ -121,15 +159,23 @@
                     <figure class="txtover">
                       <img class="d-block w-100" src="img/2c66820b5e8f1dc3e622964256c29157348294f34f33765be5ebcdc41d7b22be-rimg-w522-h296-gmir.jpg" alt="First slide" id="background_carousel">
                       <figcaption class="py-4 carouselsreveal">
-                        Events
+                        <button type="button" class="invisiblebutton">
+                          <a href="entertainment.html">
+                            Events
+                          </a>
+                        </button> 
                       </figcaption>
                     </figure>                
                   </div>
                   <div class="carousel-item">
                     <figure class="txtover">
-                      <img class="d-block w-100" src="img/2c66820b5e8f1dc3e622964256c29157348294f34f33765be5ebcdc41d7b22be-rimg-w522-h296-gmir.jpg" alt="First slide" id="background_carousel">
+                      <img class="d-block w-100" src="img/gallerybackgroundimage1.jpg" alt="First slide" id="background_carousel">
                       <figcaption class="py-4">
-                        Gallery
+                        <button type="button" class="invisiblebutton">
+                          <a href="gallery.html">
+                            Gallery
+                          </a>
+                        </button>
                       </figcaption>
                     </figure>                
                   </div>
@@ -137,7 +183,11 @@
                     <figure class="txtover">
                       <img class="d-block w-100" src="img/photo-1435527173128-983b87201f4d.jfif" alt="First slide" id="background_carousel">
                       <figcaption class="py-4">
-                        Calender
+                        <button type="button" class="invisiblebutton">
+                          <a href="calendar.html">
+                            Calendar
+                          </a>
+                        </button>
                       </figcaption>
                     </figure>
                   </div>
@@ -195,7 +245,7 @@
       
 
       <section class="reviews gradient">
-      <div class="container py-4">
+      <div class="container py-4" id="reviews-container">
           <div class="row reviewstitle headline load-hidden">
             <div class="col-md-12 text-center">
               <h1 class="display-4">Reviews</h1>
@@ -220,23 +270,25 @@
               </div>
             </div>
           </article>
-          <article class="postcard dark green reviewreveal">
-            <a class="postcard__img_link" href="#">
-              <img class="postcard__img" src="img/dryrubcajunwing2.png" alt="Dry Rub Cajun Wings #2" />
-            </a>
-            <div class="postcard__text">
-              <h1 class="postcard__title green"><a href="#">5/5 <br> <img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"></a></h1>
+          <div class="middle-review">
+            <article class="postcard dark green reviewreveal">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="img/dryrubcajunwing2.png" alt="Dry Rub Cajun Wings #2" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title green"><a href="#">5/5 <br> <img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"><img src="img/star-fill.svg" alt="ReviewStar"></a></h1>
 
-              <div class="postcard__bar"></div>
-              <div class="postcard__preview-txt">
-                <p>
-                  Bro....  this is the new hot spot in Jackson. Real talk. Don't just believe me. Go see for yourself.
-                  <br>
-                  -Daniel
-              </p>              
-            </div>
-            </div>
-          </article>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  <p>
+                    Bro....  this is the new hot spot in Jackson. Real talk. Don't just believe me. Go see for yourself.
+                    <br>
+                    -Daniel
+                </p>              
+              </div>
+              </div>
+            </article>
+          </div>
           <article class="postcard dark yellow reviewreveal">
             <a class="postcard__img_link" href="#">
               <img class="postcard__img" src="img/salad2.png" alt="Salad #2" />
@@ -256,7 +308,7 @@
           </article>
           
           
-          <div class="container d-flex justify-content-center mt-200 widget">
+          <div class="container d-flex justify-content-center mt-200 widget star-div">
             <div class="row">
                 <div class="col-md-12">
                     <div class="stars">
@@ -267,16 +319,16 @@
           </div>
 
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="footer-wave"><path fill="#252525" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" id="footer-wave-path"></path></svg>
       </section>
       
 
       <script>
-        ScrollReveal().reveal('.carouselsreveal', {duration: 2000});
+        ScrollReveal().reveal('.carouselsreveal', {duration: 2800});
         ScrollReveal().reveal('.timesreveal' , {duration: 3000 , interval: 500});
-        ScrollReveal().reveal('.headline', { duration: 2000 , interval: 750 });
+        ScrollReveal().reveal('.headline', { duration: 3000 , interval: 750 });
         ScrollReveal().reveal('.reviewreveal', { interval: 1000 , duration:1500 });
       </script>
-
 
 
       <section class="footer">
@@ -303,10 +355,10 @@
                         <div class="thumb-content"><a href="gallery.html">Gallery</a></div> 
                       </li>
                       <li>
-                        <div class="thumb-content"><a href="entertainment.html">Entertainment</a></div> 
+                        <div class="thumb-content"><a href="entertainment.html">Events</a></div> 
                       </li>
                       <li>
-                        <div class="thumb-content"><a href="calender.html">Calender</a></div> 
+                        <div class="thumb-content"><a href="calendar.html">Calendar</a></div> 
                       </li>
                     </ul>
                   </div>

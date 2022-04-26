@@ -26,7 +26,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 45%;
     box-sizing: border-box;
     padding: 0;
     color: white;
@@ -34,6 +34,24 @@ body {
     font-size: 50px;
     background: rgba(0, 0, 0, 0.6);
     border-style: solid;
+}
+
+@media screen and (max-width: 768px) {
+    .txtover .captiontitle {
+        width: 90%;
+    }
+
+    .txtover figcaption {
+        width: 71%;
+    }
+
+    #background1 {
+        height: 300px;
+    }
+
+    .hidden-wave {
+        display: none;
+    }
 }
 
 .landing {
@@ -66,7 +84,7 @@ a {
 
 .reviews {
     padding-top: 7rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0rem;
 }
 
 .times {
@@ -138,24 +156,15 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 .typo-light span,
 .typo-light small{  color: #fff;}
 
-ul.social-footer2 { margin: 0;padding: 0; width: auto;}
-ul.social-footer2 li {display: inline-block;padding: 0;}
-ul.social-footer2 li a:hover {background-color:#ff8d1e;}
-ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center;}
-.btn{background-color: #ff8d1e; color:#fff;}
-.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
--webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--webkit-transition: all 250ms ease-in-out 0s;
--moz-transition: all 250ms ease-in-out 0s;
--ms-transition: all 250ms ease-in-out 0s;
--o-transition: all 250ms ease-in-out 0s;
-transition: all 250ms ease-in-out 0s;
-
+    ul.social-footer2 { margin: 0;padding: 0; width: auto;
 }
+    ul.social-footer2 li {display: inline-block;padding: 0;
+}
+    ul.social-footer2 li a:hover {background-color:#ff8d1e;
+}
+    ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center;
+}
+
 
 
 
@@ -170,11 +179,14 @@ top: 243px;
 }
 .powerhour {
 
-width: 640px;
+width: 540px;
 height: 670px;
 left: 613px;
 top: 243px;
 }
+
+
+
 
 
 .card {
@@ -214,8 +226,9 @@ top: 243px;
 
 
 div.stars {
-    padding-top: 5rem;
+    padding-top: 8rem;
     width: 270px;
+    height: 120px;
     display: inline-block;
     user-select: none;
 }
@@ -232,7 +245,7 @@ label.star {
     float: right;
     padding: 10px;
     font-size: 36px;
-    color: #4A148C;
+    color: #d38a45;
     transition: all .2s
 }
 
@@ -354,6 +367,27 @@ html.sr .load-hidden {
   }
 
 
+  .parallaxmenutext {
+    margin-top: 15rem;
+    margin-bottom: -3rem;
+    font-size: 50px;
+  }
+
+  .parallaxmenutext h1 {
+      font-size: 4.5rem;
+      text-shadow: .1rem .1rem .8rem black;
+      font-weight: 600;
+  }
+
+  .parallaxmenutext h5 {
+      font-size: 1.7rem;
+      text-shadow: .1rem .1rem .5rem black;
+  }
+
+  .parallaxmenutext hr {
+    text-shadow: .1rem .1rem .8rem black;
+  }
+
 
   .parallax {
     background-image: url(img/ParkstoneBar.jpg);
@@ -364,27 +398,25 @@ html.sr .load-hidden {
     background-size: cover;
   }
 
-
-
-  .parallaxmenutext {
-    margin-top: 15rem;
-    margin-bottom: -3rem;
-    font-size: 50px;
-    background: rgba(0, 0, 0, 0.6);
-    border-style: solid;
-    font-size: 50px;
-
-  }
-
   .food {
     padding-top: 4rem;
-    line-height: 250%;
+    line-height: 180%;
     background: rgb(64,64,64);
     background: -moz-linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     background: linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#121212",GradientType=1);
     font-size:20px;
+  }
+
+  .drinksmenu {
+    background: rgb(24,24,24);
+    color: white;
+  }
+
+  .foodmenu {
+    background: rgb(24,24,24);
+    color: white;
   }
 
   .gradient2 {
@@ -404,6 +436,174 @@ html.sr .load-hidden {
         font-size: 55px;
     }
 
+    .invisiblebutton {
+        background: transparent;
+        border: none !important;
+        color: white;
+    }
+
+    .star-div {
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+    }
+
+    #reviews-container {
+        padding-bottom: 0px!important;
+    }
+
+    .middle-review {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .blue {
+        margin-bottom: 0px!important;
+    }
+
+    .green {
+        margin-bottom: 0px!important;
+    }
 
 
+    .calendar-footer-wave {
+        background-color: #f8f9fa;
+    }
+
+
+
+
+
+
+    .accordion{
+        margin: 40px 0;
+      }
+      .accordion .item {
+          border: none;
+          margin-bottom: 50px;
+          background: none;
+      }
+      .t-p{
+        color: rgb(193 206 216);
+        padding: 40px 30px 0px 30px;
+      }
+      .accordion .item .item-header h2 button.btn.btn-link {
+          background: #333435;
+          color: white;
+          border-radius: 0px;
+          font-family: 'Poppins';
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 2.5;
+          text-decoration: none;
+      }
+      .accordion .item .item-header {
+          border-bottom: none;
+          background: transparent;
+          padding: 0px;
+          margin: 2px;
+      }
+      
+      .accordion .item .item-header h2 button {
+          color: white;
+          font-size: 20px;
+          padding: 15px;
+          display: block;
+          width: 100%;
+          text-align: left;
+      }
+      
+      .accordion .item .item-header h2 i {
+          float: right;
+          font-size: 30px;
+          color: #eca300;
+          width: 50px;
+          height: 45px;
+          background-color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+      }
+      
+      .accordion .item .item-header h2 i img {
+          width: 20px;
+      }
+      button.btn.btn-link.collapsed i {
+          transform: rotate(0deg);
+      }
+      
+      button.btn.btn-link i {
+          transform: rotate(180deg);
+          transition: 0.5s;
+      }
+
+      .gallerybackground {
+          background-color:#1d1d1d;
+          color: white;
+      }
+
+      .galleryimage {
+          width: 250px;
+          height: 300px;
+          border-style: solid;
+          border-width: 2px;
+      }
+
+      .gallerytitle {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          letter-spacing: 7px;
+      }
+
+      @media screen and (max-width: 767px) {
+          .imagepadding {
+            padding-left: 5rem;
+            padding-right: 5rem;
+          }
+      }
+
+      .galleryimagewide {
+          width: 500px;
+          height: 240px;
+          border-style: solid;
+      }
+
+      .zoom {
+          transition: transform .2s;
+      }
+
+      .zoom:hover {
+        transform: scale(1.1);
+      }
+
+      .imagepadding {
+        padding-bottom: 2rem;
+      }
+
+
+      .btn-lg {
+          border-style: solid;
+          border-width: medium;
+          border-radius: 5;
+          font-size: 2.0rem;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+      }
+
+
+      .button-2 {
+        background-image: -webkit-linear-gradient(30deg, transparent 50%, white 50%);
+        background-image: linear-gradient(30deg, transparent 50%, white 50%);
+        background-size: 659px;
+        background-repeat: no-repeat;
+        background-position: 0%;
+        -webkit-transition: background 350ms ease-in-out;
+        transition: background 350ms ease-in-out;
+      }
+      .button-2:hover {
+        background-position: 100%;
+      }
+    
 

@@ -12,11 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&family=Nanum+Myeongjo&family=Taviraj:wght@300&display=swap" rel="stylesheet">
     
-    <title>The Parkstone Grille</title>
+    <title>The Parkstone Grille/Drinks-Menu</title>
     <link rel="shortcut icon" href="img/Parkstone.png">
 
+    <script type="text/javascript" src="javascript1.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
   </head>
-  <body class="bodyblack">
+  <body class="drinksmenu">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgba(0, 0, 0, 0);">
         <a class="navbar-brand" href="#"><img src="img/Parkstone.png" style="height: 40px; width: 40px ;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +49,7 @@
               <a class="nav-link" href="entertainment.html">Entertianment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="calender.html">Calender</a>
+              <a class="nav-link" href="calendar.html">Calendar</a>
             </li>
           </ul>
         </div>
@@ -57,22 +62,211 @@
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center py-4 parallaxmenutext">
               <h1 class="display-4">Drinks</h1>
-              <h6>Welcome!</h6>
+              <hr>
+              <h5>The Parkstone Drinks Menu</h5>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-sm-4"></div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#404040" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,261.3C274.3,245,343,203,411,202.7C480,203,549,245,617,256C685.7,267,754,245,823,224C891.4,203,960,181,1029,186.7C1097.1,192,1166,224,1234,218.7C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="hidden-wave"><path fill="#181818" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,261.3C274.3,245,343,203,411,202.7C480,203,549,245,617,256C685.7,267,754,245,823,224C891.4,203,960,181,1029,186.7C1097.1,192,1166,224,1234,218.7C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
       </section>
 
 
       <seciton>
-          <div class="container">
-              
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="item menusreveal">
+               <div class="item-header" id="headingOne">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Drinks
+                     <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+               </div>
+               <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                    <li>COKE $2.50</li>
+                    <li>SPRITE $2.50
+                    </li>
+                    <li>DIET COKE $2.50
+                    </li>
+                    <li>DIET COKE $2.50
+                    </li>
+                    <li>PINK LEMONADE $2.50
+                    </li>
+                    <li>UNSWEETENED TEA $2:50
+                    </li>
+                    <li>SWEETENED TEA $2.50
+                    </li>
+                    
+          
+          
+                   
+                  </div>
+               </div>
+            </div>
+            <div class="item menusreveal">
+               <div class="item-header" id="headingTwo">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Beers
+                     <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+               </div>
+               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                    <li>BUSCH LIGHT $3.00
+                    </li>
+                    <li>BUDWEISER$3.00
+                    </li>
+                    <li>BUD LIGHT $4.00
+                    </li>
+                    <li>MICHELOB ULTRA $4.00
+                    </li>
+                    <li>COORS LIGHT $4.00
+                    </li>
+                    <li>MILLER LIGHT $4.00
+                    </li>
+                    <li>WHITE CLAW (Lime 12.0z) $5.00
+                    </li>
+                    <li>WHITE CLAW (Mango 160z) $6.25
+                    </li>
+                    <li>MODELO $5.50
+                    </li>
+                    <li>CORONA $5.50
+                    </li>
+                    <li>GUINESS $5.50
+                    </li>
+                    <li>BLUE MOON $5.50
+                    </li>
+                    <li>ACE PINEAPPLE $5.75
+                    </li>
+                    <li>ABITA PURPLE HAZE $5.75
+                    </li>
+                    <li>ABITA STRAWBERRY $5.75
+                    </li>
+                    <li>HUB CITY HOLD MY BEER $5.75
+                    </li>
+                    <li>HUB CITY RIVALRY IPA $5.75
+                    </li>
+                    <li>GHOST RIVER GOLDEN ALE $6.00</li>
+                  </div>
+
+               </div>
+            </div>
+            <div class="item menusreveal">
+               <div class="item-header" id="headingThree">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                   Signature Alcoholic Drinks
+                     <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+               </div>
+               <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+          
+                    <li>OLD FASHION $9.00
+                    </li>
+                    <ul><li>
+                      Woodford Reserve,Angostura Bitters,Simple Syurp, Brandied Cherry,Twist of Orange
+
+
+                    </li></ul>
+                    <li>CHOCOLATE MARTINI $8.00
+                    </li>
+                    <ul><li>
+                      Absolute Vodka, Amaretto, Cocoa Bitters, Cream, Swirl Of Chocolate
+
+                    </li></ul>
+                    <li>PARKSTONE PALOMA $8.00
+                    </li>
+                    <ul><li>
+                      Tegulia Agave, Grapefruit, Fresh Lime and Jalapeno
+
+                    </li></ul>
+                    <li>MELTONMULE $8.00
+                    </li>
+                    <ul><li>
+                      Whiskey, Fresh Lime and Ginger Beer
+
+                    </li></ul>
+                    <li>PINK PALACE $9.00
+                    </li>
+                    <ul><li>
+                      Malibu,Pink Lemonade Pineapple Chèrry Whipped Cream
+
+                    </li></ul>
+                   
+
+                
+                  </div>
+               </div>
+            </div>
+            <div class="item menusreveal">
+               <div class="item-header" id="headingFour">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                     Cocktail Drinks And Wine
+                     <i><img src="img/angle-down-solid.svg"></i>
+                    </button>
+                  </h2>
+               </div>
+               <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                  data-parent="#accordionExample">
+                  <div class="t-p">
+                    <li>MANHATTAN $9.00</li>
+                    <li>LONG ISLAND ICE TEA $9.00</li>
+                    <li>COSMOPOLITAN $8.00</li>
+                    <li>MARGARITA $7.50
+                    </li>
+                    <li>MARTINI $7.50
+                    </li>
+                    <li>APPLE MARTINI $7.50
+                    </li>
+                    <li>SEEDLESS GRAPE $6.50
+                    </li>
+                   <h2>Wine</h2>
+                    <li>CHARDONNAY $5.75
+                    </li>
+                    <li>PINOT GRIGIO$5.75
+                    </li>
+                    <li>CABERNET $5.75
+                    </li>
+                    <li>MERLOT $5.75
+                    </li>
+                    <li>LINDEMAN MOSCATO $6.50
+                    </li>
+                    <li>HOUSE WINE PER BOTTLE $18.50
+                    </li>
+                    <li>MOSCATO PER BOTTLE $21.50
+                    </li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  <h2 class="text-center">The Parkstone Grille offers a great selection of spirits for your enjoyment.
+                    Please drive responsible and ID is required to purchase any form of alcohol beverage.
+                 </h2>
+                  </div>
+               </div>
+            </div>
           </div>
+        </div>
       </seciton>
 
-
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="footer-wave"><path fill="#252525" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" id="footer-wave-path"></path></svg>
 
       <section class="footer">
         <footer id="footer" class="footer-1">
@@ -101,7 +295,7 @@
                         <div class="thumb-content"><a href="entertainment.html">Entertainment</a></div> 
                       </li>
                       <li>
-                        <div class="thumb-content"><a href="calender.html">Calender</a></div> 
+                        <div class="thumb-content"><a href="calendar.html">Calendar</a></div> 
                       </li>
                     </ul>
                   </div>
@@ -134,6 +328,10 @@
 
 
 
+      <script>
+        ScrollReveal().reveal('.headline', { duration: 2000 });
+        ScrollReveal().reveal('.menusreveal', { interval: 500 , duration:1500 });
+      </script>
 
       <section class="returntotop">
         <div class="progress-wrap ">
