@@ -183,6 +183,8 @@ width: 540px;
 height: 670px;
 left: 613px;
 top: 243px;
+border-style: solid;
+border-width: 5px;
 }
 
 
@@ -232,15 +234,12 @@ div.stars {
     display: inline-block;
     user-select: none;
 }
-
 .mt-200 {
     margin-top: 100px
 }
-
 input.star {
     display: none
 }
-
 label.star {
     float: right;
     padding: 10px;
@@ -248,40 +247,28 @@ label.star {
     color: #d38a45;
     transition: all .2s
 }
-
 input.star:checked~label.star:before {
     content: '\f005';
     color: #FD4;
     transition: all .25s
 }
-
 input.star-5:checked~label.star:before {
     color: #FE7;
     text-shadow: 0 0 20px #952
 }
-
 input.star-1:checked~label.star:before {
     color: #F62
 }
-
 label.star:hover {
     transform: rotate(-15deg) scale(1.3)
 }
-
 label.star:before {
     content: '\f006';
     font-family: FontAwesome
 }
-
 html.sr .load-hidden {
     visibility: hidden;
 }
-
-
-
-
-
-
 .progress-wrap {
     position: fixed;
     right: 50px;
@@ -407,6 +394,14 @@ html.sr .load-hidden {
     background: linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 4%, rgba(24,24,24,1) 12%, rgba(18,18,18,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#121212",GradientType=1);
     font-size:20px;
+  }
+
+
+  .drinks {
+      line-height: 180%;
+      font-size:20px;
+      padding-top: 4rem;
+
   }
 
   .drinksmenu {
@@ -605,5 +600,112 @@ html.sr .load-hidden {
       .button-2:hover {
         background-position: 100%;
       }
-    
 
+
+      .menuimage {
+          border-style: solid;
+          border-width: 5px;
+          border-color: white;
+          box-shadow: .8rem .8rem .8rem .1rem black;
+          height: 400px; 
+          width: 350px;
+      }
+
+      .drinksimage {
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        box-shadow: .8rem .8rem .8rem .1rem black;
+        height: 500px; 
+        width: 400px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .menuimage {
+            height: 350px; 
+            width: 300px;
+        }
+
+        .drinksimage {
+            height: 350px;
+            width: 300px;
+
+        }
+    }
+
+
+    .entertainment-gradient {
+        background: rgb(124,132,148);
+        background: linear-gradient(90deg, rgba(124,132,148,1) 0%, rgba(103,113,119,1) 50%, rgba(0,22,35,1) 100%);
+    }
+
+    .entertainment-title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-shadow: .1rem .1rem .8rem black;
+        padding-top: 4rem;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .entertainment-title {
+            font-size: 3.5rem;
+        }
+    }
+
+    .entertainment-text-1 {
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .entertainment-weekly-events {
+        font-size: 35px;
+        padding-top: 3rem;
+    }
+
+    .entertainment-weekly-events-title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-shadow: .1rem .1rem .8rem black;
+        padding-bottom: 1rem;
+    }
+
+    .entertainment-image {
+        border-style: solid;
+        border-width: 5px;
+    }
+
+    .entertainment-notable-performers {
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .entertainment-notable-performers-title {
+        font-size: 4.0rem;
+        font-weight: 700;
+        text-shadow: .1rem .1rem .8rem black;
+    }
+
+    .entertainment-notable-performers-text {
+        font-size: 1.5rem;
+    }
+
+    .entertainment-game-room {
+        padding-bottom: 2rem;
+    }
+
+    .entertainment-game-room-text-1 {
+        font-size: 2.5rem;
+    }
+
+    .entertainment-game-room-text-2 {
+        font-size: 2.0rem;
+        padding-top: 2rem;
+    }
+
+    .entertainement-game-room-title {
+        font-size: 4.0rem;
+        font-weight: 700;
+        text-shadow: .1rem .1rem .8rem black;
+    }
