@@ -643,7 +643,7 @@ html.sr .load-hidden {
         font-size: 4.5rem;
         font-weight: 700;
         text-shadow: .1rem .1rem .8rem black;
-        padding-top: 4rem;
+        padding-top: 5rem;
 
     }
 
@@ -656,7 +656,7 @@ html.sr .load-hidden {
     .entertainment-text-1 {
         font-size: 2rem;
         padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 4rem;
     }
 
     .entertainment-weekly-events {
